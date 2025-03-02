@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ucln(a,b){
+            if(a%b==0){
+                return b;
+            }
+            return ucln(b,a%b);
+        }
+        function tinh(){
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            var kq = ucln(a,b);
+            document.getElementById('kq').value=kq; 
+        } 
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td><b>Nhap so thu nhat:</b></td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td><b>Nhap so thu hai:</b></td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td><b>ULCN cua 2 so tren la:</b></td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="tinh()" value="Tim">
+                    <input type="reset" value="Huy bo">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

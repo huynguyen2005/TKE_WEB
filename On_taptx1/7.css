@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: red;
+}
+.head1{
+    background-color: brown;
+    display: flex;
+}
+.logo{
+    background-color: aqua;
+    margin: 10px 0px 10px 30px;
+    width: 100px;
+    text-align: center;
+    padding: 30px
+}
+.tenbrand{
+    padding: 30px 30px 30px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.menu>ul{
+    display: flex;
+    list-style-type: none;
+    background-color: beige;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    padding: 20px;
+}
+.menu>li{
+    border-right: 1px solid black;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu>ul>li:hover{
+    background-color: blueviolet;
+}
+.cha{
+    position: relative;
+}
+.con{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 58px;
+    left: 0px;
+    width: 200px;
+}
+ul.con{
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.con > li:hover{
+    background-color: red;
+}
+.side{
+    width: 200px;
+    background-color: brown;
+}
+.side2{
+    background-color: brown;
+}
+ul.side2{
+    list-style: 3px circle white;
+}
+.side2 ul li{
+    padding: 10px;
+    border-bottom:  1px solid white ;
+}
+.side2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.kt ul{
+    list-style-type: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.kt ul li{
+    padding: 5px;
+    border-right: 1px solid white;
+}
+.kt ul li a{
+    text-decoration: none;
+    color: white;
+}
+.kt ul li:last-child{
+    border: none;
+}

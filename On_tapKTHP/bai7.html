@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tinh(){
+            var a = document.getElementById('a').value 
+            var b = a.trim().split(' ').map(Number)
+            b.sort((x,y)=>y-x)
+            document.getElementById('kq').value = b.join(' ')
+        }
+    </script>
+</head>
+<body>
+    <table border="2">
+        <form>
+            <tr>
+                <td colspan="2" style="text-align: center;">SAP CAU THEO QUY LUAT</td>
+            </tr>
+            <tr>
+                <td>Nhap cau ban dau:</td>
+                <td><input type="text" id="a" size="50px"></td>
+            </tr>
+            <tr>
+                <td>Cau sau khi xap lai:</td>
+                <td><input type="text" id="kq" size="50px"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" onclick="tinh()" value="Kiem tra"> 
+                    <input type="reset" value="Viet lai cau">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

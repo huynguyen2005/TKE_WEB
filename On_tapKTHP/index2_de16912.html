@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var a = document.getElementById('a').value.trim();
+            var b = document.getElementById('b').value;
+            var c = a.split(' ').filter(word=>word===b);
+            document.getElementById('c').value = c.length;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Nhap chuoi: </td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Nhap tu: </td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td>Thong bao: </td>
+                <td><input type="text" id="c"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="submit" onclick="check()">
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

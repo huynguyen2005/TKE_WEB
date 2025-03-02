@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tinh(){
+            var a = document.getElementById('a').value.trim();
+            a = a.split(' ');
+            document.getElementById('b').value = a[a.length-1];
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Ho va ten:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Ten:</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="tinh()" value="Tim kiem">
+                    <input type="reset" value="Huy">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

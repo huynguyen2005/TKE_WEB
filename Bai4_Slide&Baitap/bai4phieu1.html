@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text--while {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Container  */
+.container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: #FACFCF;
+    padding: 0 100px;
+}
+
+.header {
+    height: 100px;
+    line-height: 100px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/* Menu top  */
+.nav-top {
+    height: 30px;
+    background-color: #420000;
+}
+
+.nav-top__menu {
+    display: flex;
+}
+
+.nav-top__item {
+    width: 100%;
+    line-height: 30px;
+    padding-left: 1px;
+}
+.nav-top__item:hover {
+    background-color: chartreuse;
+}
+
+.nav-top__item a {
+    color: #fff;
+}
+
+/* SIDEBAR  */
+.side-bar {
+    display: flex;
+}
+
+/* Menu left  */
+.side-bar .nav-left__menu {
+    width: 200px;
+    height: 100%;
+    background-color: #9D6F68;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .nav-left__item a {
+    width: 100%;
+    padding: 8px 0 8px 4px;
+    display: inline-block;
+}
+.side-bar .nav-left__item {
+    height: 100%;
+}
+.side-bar .nav-left__item:hover {
+    background-color: chartreuse;
+}
+
+/* Content  */
+.side-bar .content {
+    padding-left: 12px;
+    text-align: justify;
+}
+.side-bar .content__heading,
+.side-bar .content__title,
+.side-bar .content__text {
+    margin-top: 12px;
+}
+.side-bar .content__text, footer {
+    font-size: 13px;
+}
+
+footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="text--while">Slink</span>
+            <span>Red</span>
+        </header>
+        <nav class="nav-top">
+            <ul class="nav-top__menu">
+                <li class="nav-top__item"><a href="#">Home</a></li>
+                <li class="nav-top__item"><a href="#">About</a></li>
+                <li class="nav-top__item"><a href="#">Products</a></li>
+                <li class="nav-top__item"><a href="#">Serices</a></li>
+                <li class="nav-top__item"><a href="#">Design</a></li>
+                <li class="nav-top__item"><a href="#">Lorem</a></li>
+            </ul>
+        </nav>
+        <div class="side-bar">
+            <nav class="nav-left">
+                <ul class="nav-left__menu">
+                    <li class="nav-left__item"><a class="text--while" href="#">Links</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">SEO</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">PHP</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">Ajax</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">Jquery</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">Lorem</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">Internet Marketing</a></li>
+                    <li class="nav-left__item"><a class="text--while" href="#">XHTML Templates</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h3 class="content__heading">You may use this template in any manner you like. All I ask is that you leave the link back to my site at the bottom of the page.</h3>
+
+                <h4 class="content__title">Template Notes</h4>
+                <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h4 class="content__title">More information</h4>
+                <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h4 class="content__title">Template Notes</h4>
+                <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <footer>
+            <p class="text--while">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </footer>
+    </div>
+</body>
+</html>

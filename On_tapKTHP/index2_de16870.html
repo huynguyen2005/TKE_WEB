@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tinh(){
+            var a = document.getElementById('a').value.trim();
+            a = a.split('').map(Number).filter(num=>num%2!=0);
+            document.getElementById('b').value = a.join(',');
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Nhap so nguyen:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>So chu so le:</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Dem" onclick="tinh()">
+                    <input type="reset" value="Huy bo">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai3.css">
+    <script>
+        function sapxep() {
+            var arr = document.getElementById('a').value;
+            arr = arr.split(',').map(Number);
+            let arr1 = arr.filter(num => num%2==0 && num!=0);
+            let arr2 = arr.filter(num => num==0);
+            let arr3 = arr.filter(num => num%2!=0 && num!=0);
+            var sum = arr1.concat(arr2,arr3);
+            document.getElementById('b').value = sum.join(',');
+        }
+    </script>
+</head>
+<body>
+    <header class="banner">
+        <div style="margin:10px 10px 10px 10px;">
+            <img src="logofpt.png" alt="logo" style="width: 200px;height: 50px;">
+        </div>
+        <div style="margin: 10px 10px 10px 100px;">
+            <input type="text" placeholder="Nhap ten dien thoai, may tinh, phu kien, can tim..." style="width: 400px;height: 30px;">
+        </div>
+        <div style="margin:10px 10px 10px 500px">
+            <img src="logofpt2.png" alt="infor">
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">DIEN THOAI</a></li>
+            <li><a href="#">LAPTOP</a></li>
+            <li><a href="#">APPLE</a></li>
+            <li><a href="#">PC-LINK KIEN</a></li>
+            <li class="cha"><a href="#">PHU KIEN</a>
+                <ul class="con">
+                    <li><p>BAN CHAY NHAT</p></li>
+                    <li style="display: flex;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="product">
+                        <a href="#">Combo Loa Blutooth Karaoke Nhua den mic khong day<br><span style="color: red;">2.790.000d</span></a>
+                    </li>
+                    <li style="display: flex;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="product">
+                        <a href="#">Combo Loa Blutooth Karaoke Nhua den mic khong day<br><span style="color: red;">2.790.000d</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">MAY CU GIA RE</a></li>
+            <li><a href="#">HANG GIA DUNG</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="menusection">
+            <h3 style="background-color: rgba(0, 255, 115, 0.573);color: white;width: 200px;padding: 10px;">GALAXY NOTE</h3>
+            <div class="menusec">
+                <ul>
+                    <li><a href="#">Galaxy Note 10+</a></li>
+                    <li><a href="#">Galaxy Note 10</a></li>
+                    <li><a href="#">Galaxy Note 10+</a></li>
+                    <li><a href="#">Galaxy Note 10+</a></li>
+                    <li><a href="#">Galaxy Note 10+</a></li>
+                    <li><a href="#">Galaxy Note 10+</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div style="display: block;">
+                <div style="display: flex;margin: 20px;">
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                </div>
+                <div style="display: flex;margin: 20px;">
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                </div>
+                <div style="display: flex;margin: 20px;">
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                    <div style="display: block;width: 100px;">
+                        <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 50px;">
+                        <p>Galaxy Note 10+</p>
+                    </div>
+                </div>           
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 300px;">
+                    <p>Tai nghe chinh hang APPLE</p>
+                    <p style="color: red;">2.000.000$</p>
+                    <p><s>5.000.000</s>$</p>
+                </div>
+                <div>
+                    <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 300px;">
+                    <p>Tai nghe chinh hang APPLE</p>
+                    <p style="color: red;">2.000.000$</p>
+                    <p><s>5.000.000</s>$</p>
+                </div>
+                <div>
+                    <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 300px;">
+                    <p>Tai nghe chinh hang APPLE</p>
+                    <p style="color: red;">2.000.000$</p>
+                    <p><s>5.000.000</s>$</p>
+                </div>
+                <div>
+                    <img src="Screenshot 2024-11-14 221455.png" alt="#" style="width: 300px;">
+                    <p>Tai nghe chinh hang APPLE</p>
+                    <p style="color: red;">2.000.000$</p>
+                    <p><s>5.000.000</s>$</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="margin: 50px 100px 50px 100px;">
+        <table border="2">
+            <form>
+                <tr>
+                    <td colspan="2" style="text-align: center;">Sap xep mang</td>
+                </tr>
+                <tr>
+                    <td>Nhap mang:</td>
+                    <td><input type="text" id="a"></td>
+                </tr>
+                <tr>
+                    <td>Mang sau khi sap xep: </td>
+                    <td><input type="text" id="b"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="reset" value="Huy">
+                        <input type="button" onclick="sapxep()" value="Sap xep">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

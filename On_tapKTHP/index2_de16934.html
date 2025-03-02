@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tinh(){
+            var thang = parseInt(document.getElementById('thang').value);
+            var nam = parseInt(document.getElementById('nam').value);
+            if(thang==1||thang==3||thang==5||thang==7||thang==8||thang==10||thang==12){
+                document.getElementById('ngay').value = 30;
+            }
+            else if(thang==4||thang==6||thang==9||thang==11){
+                document.getElementById('ngay').value = 31;
+            }
+            else{
+                if(nam%4==0){
+                    document.getElementById('ngay').value = 29;
+                }
+                else{
+                    document.getElementById('ngay').value = 28;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td><b>Thang: </b></td>
+                <td><input type="text" id="thang"></td>
+                <td><b>Nam: </b></td>
+                <td><input type="text" id="nam"></td>
+            </tr>
+            <tr>
+                <td><b>So ngay: </b></td>
+                <td><input type="text" id="ngay"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" onclick="tinh()" value="Hien thi so ngay cua thang">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

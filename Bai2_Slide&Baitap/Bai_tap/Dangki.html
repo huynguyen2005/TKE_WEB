@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table align="left" width="800 px" border="1" style="border-collapse:collapse; background-color: aquamarine;">
+            <caption style="color: cadetblue; font-size: 30px;"><b>Phiếu tham gia chương trình khuyến mãi</b></caption>
+            <tr>
+                <td align="left"><label for="name"><span style="color: cadetblue;">Họ và tên</span></label></td>
+                <td><input type="text" style="width:300px" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td align="left"><label for="diachi"><span style="color: cadetblue;">Địa chỉ</span></label></td>
+                <td><input type="text" style="width:200px" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td align="left"><label for="phone"><span style="color: cadetblue;">Điện thoại</span></label></td>
+                <td><input type="text" style="width:150px" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td align="left"><label for="phai"><span style="color: cadetblue;">Phái</span></label></td>
+                <td>
+                    <input type="radio" name="phai" id="" value="Nam"> Nam
+                    <input type="radio" name="phai" id="" value="Nữ"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="job"><span style="color: cadetblue;">Nghề nghiệp</span></label></td>
+                <td>
+                    <input list="job" style="width:90px">
+                    <datalist id="job">
+                        <option value="Giáo viên"></option>
+                        <option value="Học sinh"></option>
+                        <option value="Sinh viên"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="height:100px"><label for="sp"><span style="color: cadetblue;">Chọn sản phẩm tham gia</span></label></td>
+                <td style="height:100px">
+                    <select id="sp" name="sp">
+                        <option value="Kem đánh răng">Kem đánh răng</option>
+                        <option value="Bột giặt">Bột giặt</option>
+                        <option value="Dầu gội đầu">Dầu gội đầu</option>
+                        <option value="Sữa tắm">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="nguoi"><span style="color: cadetblue;">Số người dự đoán tham gia</span></label></td>
+                <td><input type="text" style="width:80px" id="nguoi" name="nguoi"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="Đồng ý"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

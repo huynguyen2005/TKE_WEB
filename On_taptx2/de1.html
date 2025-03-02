@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nguyenTo(n){
+            if(n<2){
+                return false;
+            }
+            for(var i=2;i<=Math.sqrt(n);i++){
+                if(n%i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        function check(){
+            var n = parseInt(document.getElementById('a').value);
+            var sum=0;
+            for(var i=0;i<=n;i++){
+                if(nguyenTo(i)){
+                    sum+=i;
+                }
+            }
+            document.getElementById('kq').value = sum;
+            document.getElementById('kq').style.color = 'red';
+            document.getElementById('kq').style.fontSize = '30px';
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Nhap n: </td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Tong n so nguyen to dau tien: </td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="check()" value="Kiem tra">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinh(){
+            var a = document.getElementById('a').value 
+            var b = a.trim().split(',')
+            b = b.map(Number).filter(num=>num%2!=0)
+            var sum=0
+            for(var i=0;i<b.length;i++){
+                sum+=b[i]
+            }
+            document.getElementById('kq').value = b.join('+') + '=' + sum
+        }
+    </script>
+    <table>
+        <form>
+            <tr>
+                <td>Nhập mảng 1 chiều:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Kết quả:</td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="tinh()" value="Kiểm tra">
+                    <input type="reset" value="Hủy">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

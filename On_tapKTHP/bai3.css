@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-color: red;
+    display: flex;
+}
+.menu{
+    background-color: black;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    padding: 10px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu>ul>li:hover{
+    background-color:pink;
+}
+.menu>ul>li>a:hover{
+    color: gray;
+}
+.cha{
+    position: relative;
+}
+.con{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    top:38.4px;
+    left: 0px;
+    width: 500px;
+}
+.con a{
+    color: black;
+}
+.con a:hover{
+    color: pink;
+}
+ul.con{
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.menusection{
+    margin-top: 10px;
+    display: flex;
+    border-bottom:2px solid gray;
+}
+.menusec{
+    margin-left: 100px;
+}
+.menusec ul{
+    list-style: none;
+    display: flex;
+}
+.menusec li{
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+.menusec a{
+    text-decoration: none;
+    color: black;
+}

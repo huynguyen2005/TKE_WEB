@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function xuli(){
+            var a =  document.getElementById('a').value;
+            var name = a.trim().replace(/s+/g,' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+            document.getElementById('b').value = name.join(' ');
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Fill Full Name:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Chuan hoa ten:</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px;text-align: center;">
+                    <input type="button" onclick="xuli()" value="Log in">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        function check(){
+            var a = document.getElementById('a').value;
+            var pat1 = /.{8,}/;
+            var user = pat1.test(a);
+            var b = document.getElementById('b').value.trim();
+            var pat2 = /^(?!\d)(?=.*[A-Z])[A-Za-z0-9]{8,}$/
+            // ?!\d nghĩa là chuỗi không được bắt đầu bằng số
+            // ?=.*[A-Z] nghĩa là xét trên toàn cục xem có 1 kí tự in hoa hay không
+            // ?=[A-Z] nghĩa là chuỗi phải bắt đầu kí tự in hoa
+            // ?=.*[A-Z]{2} nghĩa là xét trên toàn cục xem có 2 kí tự in hoa hay không
+            var pass = pat2.test(b);
+            if(user&&pass){
+                document.getElementById('print').innerHTML = "Ban da nhap dung";
+            }
+            else{
+                document.getElementById('print').innerHTML = "Ban da nhap sai!!!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p id="print" style="color: red;"></p></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick="check()" value="Kiem tra password"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

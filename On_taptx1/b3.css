@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white ;
+}
+ul.hop1{
+    list-style-type: none;
+    background-color: blue;
+    display:inline-block;
+    width: 100%;
+}
+ul.hop1 li{
+    border-bottom: 1px solid white;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+ul.hop1 li:hover{
+    background-color: red;
+}
+.cha{
+    position: relative;
+}
+.con{
+
+    background-color: red;
+    position: absolute;
+    left: 300px;
+    top:0px;
+    width: 200px;
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.cha .con li{
+    border-bottom: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="pass"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="kt()" value="kiem tra">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="in"></span>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <script>
+        function kt(){
+            var name = document.getElementById("name").value 
+            var pw = document.getElementById("pass").value
+            var pat = /[a-z A-Z 0-9]+/
+            var pat2 = /^[a-zA-Z][a-zA-Z0-9]{7,}[A-Z]+/
+            if(pat.test(name)&&pat.test(pw)){
+                if(pat2.test(pw)){
+                    document.getElementById("in").innerHTML = "Ban nhap dung"
+                }
+                else{
+                    document.getElementById("in").innerHTML = "Ban nhap sai"
+                }
+            }
+            else{
+                document.getElementById("in").innerHTML = "Ban chua nhap day du thong tin"
+            }
+
+        }
+    </script>
+</body>
+</html>

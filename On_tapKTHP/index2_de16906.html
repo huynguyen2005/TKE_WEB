@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var a = document.getElementById('a').value.trim();
+            var b = a.split(' ');
+            var c = b.filter(word=>word.length==4&&word.charAt(0)==='m');
+            document.getElementById('b').value = c.length;
+        }
+    </script>
+</head>
+<body>
+    <table>
+            <tr>
+                <td>Nhap chuoi:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>So tu co 4 ki tu la:</td>
+                <td><input type="text" id="b"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" onclick="check()" value="Kiem tra">
+                    <input type="reset" value="Huy">
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

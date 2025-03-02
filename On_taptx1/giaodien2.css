@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    display: flex;
+    background-color: red;
+    height: 80px;
+    justify-content: space-between;
+}
+.menu{
+    background-color: black;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    padding: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li:hover{
+    background-color: blue;
+}
+.cha{
+    position: relative;
+}
+.con{
+    width: 200px;
+    top:58.4px;
+    left: 0px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+ul.con{
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.menu2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu2_trong{
+    padding: 20px;
+}
+.anh{ 
+    padding: 10px;
+}

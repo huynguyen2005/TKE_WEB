@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var a = document.getElementById('a').value;
+            var b = a.trim().split(',').map(Number); 
+            var sum=0;
+            for(var i=0;i<b.length;i++){
+                if(i%2!=0){
+                    sum+=b[i];
+                }
+            }
+            document.getElementById('kq').value = sum;
+        }
+    </script>
+</head>
+<body>
+    <table border="2">
+        <form>
+            <tr>
+                <td colspan="2" style="text-align: center;">Tinh tong day so</td>
+            </tr>
+            <tr>
+                <td>Nhap mang:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Ket qua:</td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick="check()" value="Kiem tra"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
